@@ -1,4 +1,4 @@
-Created by [https://github.com/cbkinase/RenderKeepAlive]cbkinase.
+Created by [cbkinase](https://github.com/cbkinase/RenderKeepAlive).
 
 # How to Use
 
