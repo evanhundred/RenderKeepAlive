@@ -2,9 +2,9 @@ name: RenderKeepAlive
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   schedule:
-    - cron: '*/10 13-22 * * 1-5'
+    - cron: "*/10 9-18 * * 1-5"
 
   workflow_dispatch:
 
