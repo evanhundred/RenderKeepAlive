@@ -1,0 +1,25 @@
+name: RenderKeepAlive
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '*/10 13-22 * * 1-5'
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run
+        run: |
+          pip install -r requirements.txt
+          python3 main.py
